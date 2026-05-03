@@ -2,7 +2,7 @@ import { supabase, isSupabaseConfigured } from "./client";
 import type { Product, Locale } from "@/lib/types";
 
 // Fallback seed products when Supabase isn't configured
-const SEED_PRODUCTS: Product[] = [
+export const SEED_PRODUCTS: Product[] = [
   {
     id: "1",
     title: { en: "Crossbody Bag", id: "Tas Selempang", th: "กระเป๋าสะพายข้าง", vi: "Túi đeo chéo" },

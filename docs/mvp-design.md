@@ -81,14 +81,33 @@ item_id,title,price_cny,min_order,unit,images,category,category_id,supplier_id,s
 - [x] 数据库表 `products_1688`（DDL 在 `docs/schema.sql`）
 - [x] CSV 导入脚本 `scripts/import_csv.ts`
 - [x] 数据校验脚本 `scripts/validate_data.ts`
-- [ ] 示例数据 `data/sample_products.csv`
-- [ ] Supabase 迁移执行（需项目 Token）
+- [x] 示例数据 `data/sample_products.csv`
+- [ ] Supabase 迁移执行（需项目 Token，参见下方"执行迁移"）
+- [x] TypeScript 脚本验证通过（文件读取正常，语法正确）
+
+## 执行迁移
+
+在 Supabase 项目 SQL Editor 中运行 `docs/schema.sql`，或使用 CLI：
+
+```bash
+npx supabase db push
+# 需要 SUPABASE_ACCESS_TOKEN 环境变量
+```
 
 ## 环境变量
 
 ```env
 SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+```
+
+### 本地运行脚本
+
+```bash
+# 使用 Node 22（项目 Node 版本过低，需切换）
+nvm use 22
+npx tsx scripts/import_csv.ts data/sample_products.csv
+npx tsx scripts/validate_data.ts
 ```
 
 ## 后续扩展方向

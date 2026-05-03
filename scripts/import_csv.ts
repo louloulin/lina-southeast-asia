@@ -178,7 +178,7 @@ async function main() {
       item_id,
       title: clean(row[idx["title"]]) || null,
       price_cny,
-      min_order: isNaN(min_order) ? null : min_order,
+      min_order: (min_order !== null && !isNaN(min_order)) ? min_order : null,
       unit: clean(row[idx["unit"]]) || null,
       images: parseImages(row[idx["images"]] || ""),
       category: clean(row[idx["category"]]) || null,
