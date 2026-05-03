@@ -1,0 +1,29 @@
+{
+  "meta": { "title": "LINA Store", "description": "Cross-border e-commerce from China to Southeast Asia" },
+  "nav": { "products": "Products", "cart": "Cart", "checkout": "Checkout" },
+  "product": {
+    "addToCart": "Add to Cart",
+    "addedToCart": "Added!",
+    "outOfStock": "Out of Stock",
+    "backToProducts": "← Back to Products",
+    "quantity": "Qty",
+    "inStock": "{count} in stock"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "continueShopping": "Continue Shopping",
+    "subtotal": "Subtotal",
+    "remove": "Remove",
+    "proceedToCheckout": "Proceed to Checkout",
+    "items": "{count, plural, one {1 item} other {# items}}"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "payWithStripe": "Pay with Stripe",
+    "processing": "Processing...",
+    "subtotal": "Subtotal",
+    "total": "Total"
+  },
+  "footer": { "poweredBy": "Powered by LINA · Cross-border from 1688" }
+}

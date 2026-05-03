@@ -1,0 +1,29 @@
+{
+  "meta": { "title": "Toko LINA", "description": "E-commerce lintas batas dari Tiongkok ke Asia Tenggara" },
+  "nav": { "products": "Produk", "cart": "Keranjang", "checkout": "Bayar" },
+  "product": {
+    "addToCart": "Tambah ke Keranjang",
+    "addedToCart": "Ditambahkan!",
+    "outOfStock": "Stok Habis",
+    "backToProducts": "← Kembali ke Produk",
+    "quantity": "Jumlah",
+    "inStock": "{count} tersedia"
+  },
+  "cart": {
+    "title": "Keranjang Belanja",
+    "empty": "Keranjang kosong",
+    "continueShopping": "Belanja Lagi",
+    "subtotal": "Subtotal",
+    "remove": "Hapus",
+    "proceedToCheckout": "Lanjut ke Pembayaran",
+    "items": "{count, plural, other {# item}}"
+  },
+  "checkout": {
+    "title": "Pembayaran",
+    "payWithStripe": "Bayar dengan Stripe",
+    "processing": "Memproses...",
+    "subtotal": "Subtotal",
+    "total": "Total"
+  },
+  "footer": { "poweredBy": "Didukung oleh LINA · Impor dari 1688" }
+}

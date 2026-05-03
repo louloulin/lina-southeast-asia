@@ -1,0 +1,29 @@
+{
+  "meta": { "title": "Cửa hàng LINA", "description": "Thương mại điện tử xuyên biên giới từ Trung Quốc sang Đông Nam Á" },
+  "nav": { "products": "Sản phẩm", "cart": "Giỏ hàng", "checkout": "Thanh toán" },
+  "product": {
+    "addToCart": "Thêm vào giỏ",
+    "addedToCart": "Đã thêm!",
+    "outOfStock": "Hết hàng",
+    "backToProducts": "← Quay lại sản phẩm",
+    "quantity": "Số lượng",
+    "inStock": "Còn {count} sản phẩm"
+  },
+  "cart": {
+    "title": "Giỏ hàng",
+    "empty": "Giỏ hàng trống",
+    "continueShopping": "Tiếp tục mua sắm",
+    "subtotal": "Tạm tính",
+    "remove": "Xóa",
+    "proceedToCheckout": "Tiến hành thanh toán",
+    "items": "{count, plural, other {# sản phẩm}}"
+  },
+  "checkout": {
+    "title": "Thanh toán",
+    "payWithStripe": "Thanh toán qua Stripe",
+    "processing": "Đang xử lý...",
+    "subtotal": "Tạm tính",
+    "total": "Tổng cộng"
+  },
+  "footer": { "poweredBy": "Được hỗ trợ bởi LINA · Xuyên biên giới từ 1688" }
+}

@@ -1,0 +1,29 @@
+{
+  "meta": { "title": "ร้าน LINA", "description": "อีคอมเมิร์ซข้ามพรมแดนจากจีนสู่เอเชียตะวันออกเฉียงใต้" },
+  "nav": { "products": "สินค้า", "cart": "ตะกร้า", "checkout": "ชำระเงิน" },
+  "product": {
+    "addToCart": "เพิ่มลงตะกร้า",
+    "addedToCart": "เพิ่มแล้ว!",
+    "outOfStock": "สินค้าหมด",
+    "backToProducts": "← กลับไปดูสินค้า",
+    "quantity": "จำนวน",
+    "inStock": "มี {count} ชิ้น"
+  },
+  "cart": {
+    "title": "ตะกร้าสินค้า",
+    "empty": "ตะกร้าว่าง",
+    "continueShopping": "ช้อปต่อ",
+    "subtotal": "ราคารวม",
+    "remove": "ลบ",
+    "proceedToCheckout": "ไปชำระเงิน",
+    "items": "{count, plural, other {# รายการ}}"
+  },
+  "checkout": {
+    "title": "ชำระเงิน",
+    "payWithStripe": "ชำระด้วย Stripe",
+    "processing": "กำลังดำเนินการ...",
+    "subtotal": "ราคารวม",
+    "total": "ยอดรวม"
+  },
+  "footer": { "poweredBy": "สนับสนุนโดย LINA · ข้ามพรมแดนจาก 1688" }
+}
