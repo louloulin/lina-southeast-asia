@@ -6,9 +6,6 @@ on:
   pull_request:
     branches: [main]
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   lint-and-typecheck:
     runs-on: ubuntu-latest
@@ -20,9 +17,7 @@ jobs:
           node-version: 22
           cache: npm
 
-      - run: npm ci --prefer-offline
-        env:
-          npm_config_cache: ${{ runner.temp }}/.npm
+      - run: npm install
 
       - name: Type check
         run: npx tsc --noEmit
@@ -43,9 +38,7 @@ jobs:
           node-version: 22
           cache: npm
 
-      - run: npm ci --prefer-offline
-        env:
-          npm_config_cache: ${{ runner.temp }}/.npm
+      - run: npm install
 
       - name: Build
         run: npm run build
