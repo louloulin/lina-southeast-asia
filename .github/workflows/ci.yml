@@ -20,7 +20,9 @@ jobs:
           node-version: 22
           cache: npm
 
-      - run: npm ci --legacy-peer-deps
+      - run: npm ci --prefer-offline
+        env:
+          npm_config_cache: ${{ runner.temp }}/.npm
 
       - name: Type check
         run: npx tsc --noEmit
@@ -41,7 +43,9 @@ jobs:
           node-version: 22
           cache: npm
 
-      - run: npm ci --legacy-peer-deps
+      - run: npm ci --prefer-offline
+        env:
+          npm_config_cache: ${{ runner.temp }}/.npm
 
       - name: Build
         run: npm run build
