@@ -9,7 +9,10 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "import:csv": "tsx scripts/import_csv.ts",
+    "import:sample": "tsx scripts/import_csv.ts data/sample_products.csv",
+    "validate:products": "tsx scripts/validate_data.ts"
   },
   "dependencies": {
     "@stripe/stripe-js": "^9.4.0",
@@ -27,6 +30,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
     "prettier": "^3.4.0",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }
