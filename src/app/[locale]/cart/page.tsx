@@ -6,7 +6,6 @@ import { Link } from "@/lib/i18n/routing";
 import { useCartStore } from "@/stores/cart";
 import { useLocaleStore } from "@/stores/locale";
 import { formatPrice } from "@/lib/types";
-import type { Locale } from "@/lib/types";
 
 export default function CartPage() {
   const t = useTranslations("cart");
