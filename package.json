@@ -12,9 +12,11 @@
     "format:check": "prettier --check .",
     "import:csv": "tsx scripts/import_csv.ts",
     "import:sample": "tsx scripts/import_csv.ts data/sample_products.csv",
-    "validate:products": "tsx scripts/validate_data.ts"
+    "validate:products": "tsx scripts/validate_data.ts",
+    "sync:1688": "tsx -e \"import { sync1688Products } from './src/lib/sync'; sync1688Products({}).then(r => { console.log(JSON.stringify(r)); process.exit(0); }).catch(e => { console.error(e); process.exit(1); })\""
   },
   "dependencies": {
+    "@prisma/client": "^5.22.0",
     "@stripe/stripe-js": "^9.4.0",
     "@supabase/supabase-js": "^2.78.0",
     "next": "16.2.4",
@@ -31,6 +33,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
     "prettier": "^3.4.0",
+    "prisma": "^5.22.0",
     "tsx": "^4.21.0",
     "typescript": "^5"
   }

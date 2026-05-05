@@ -2,8 +2,22 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
   "regions": ["sin1"],
+  "crons": [
+    {
+      "path": "/api/cron/sync-health",
+      "schedule": "*/10 * * * *",
+      "auth": {
+        "bearer": "${CRON_SECRET}"
+      },
+      "alert": {
+        "threshold": 12,
+        "type": "timeout"
+      }
+    }
+  ],
   "env": {
     "NEXT_PUBLIC_SUPABASE_URL": "@supabase-url",
-    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase-anon-key"
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase-anon-key",
+    "CRON_SECRET": "@cron-secret"
   }
 }
