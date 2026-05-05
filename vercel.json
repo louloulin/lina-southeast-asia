@@ -13,6 +13,17 @@
         "threshold": 12,
         "type": "timeout"
       }
+    },
+    {
+      "path": "/api/cron/general-health",
+      "schedule": "*/10 * * * *",
+      "auth": {
+        "bearer": "${CRON_SECRET}"
+      },
+      "alert": {
+        "threshold": 12,
+        "type": "timeout"
+      }
     }
   ],
   "env": {
